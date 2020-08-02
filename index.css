@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-  height: 100%;
-  width: 60%;
+  min-width: 75%;
+  max-width: 90%;
   color: white;
 }
 
@@ -19,8 +19,14 @@ body {
 #description {
   text-align: center;
 }
+
 #title {
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+#description {
+  margin-bottom: 10px;
 }
 
 #tree-map {
@@ -32,6 +38,7 @@ body {
   background-color: #311a41;
   border-radius: 5px;
   padding: 5px;
+  pointer-events: none;
   -webkit-box-shadow: 0px 0px 49px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 49px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 49px -6px rgba(0, 0, 0, 0.75);
@@ -43,6 +50,8 @@ text {
 
 .tile-text {
   font-size: 0.7em;
-  /* fill: white; */
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  fill: #23242c;
+  pointer-events: none;
 }
